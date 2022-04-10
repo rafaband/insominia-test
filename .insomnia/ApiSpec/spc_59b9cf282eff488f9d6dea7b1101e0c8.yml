@@ -1,7 +1,7 @@
 _id: spc_59b9cf282eff488f9d6dea7b1101e0c8
 type: ApiSpec
 parentId: wrk_404bda8c75d640648122bfc6133c0510
-modified: 1649437268877
+modified: 1649554595962
 created: 1649434821338
 fileName: my-spec.yaml
 contents: >-
@@ -16,6 +16,17 @@ contents: >-
       - url: 'http'
   paths:
     /:
+      get:
+        summary: Listagem de Comandas
+        description: Exibe lista de Comandas
+        responses:
+          "200":
+            description: Ok
+            content:
+              application/json:
+                schema:
+                  type: string
+    /test:
       get:
         summary: Listagem de Comandas
         description: Exibe lista de Comandas
